@@ -1,5 +1,5 @@
-var fs = require('fs')
-const wavefile = require('wavefile');
+const fs = require('fs')
+const wavefile = require('wavefile')
 
 filename = '../sounds/C.wav'
 let wav = new wavefile.WaveFile(fs.readFileSync(filename));

@@ -1,3 +1,5 @@
+// mixer
+
 // This function takes an arbitrary number of audio streams and 
 // mixes them together into a single output stream by adding all 
 // the samples in each stream at the same indicies together.
@@ -18,13 +20,7 @@ const mix = function() {
             outputStream[i] += streams[j][i]
         }
     }
-    console.log(outputStream)
     return outputStream
 }
 
-// 2 audio streams with 2 samples each
-var stream1 = new Int16Array([1, 2, 3, 4])
-var stream2 = new Int16Array([1, 2, 3, 4])
-var stream3 = new Int16Array([1, 2, 3, 4])
-
-mix(stream1, stream2, stream3)
+module.exports = mix
