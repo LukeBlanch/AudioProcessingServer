@@ -2,4 +2,5 @@
 ## To use:
 npm install
 
-node ./pcmTest.js
+From root:
+npm run dev
