@@ -7,10 +7,7 @@
 // integer shorts to represent 16-bit PCM audio.
 // The lists may be of arbitrary length as long as they are
 // all the same length as each other.
-const mix = function() {
-    // Pull the audio streams from the function arguments object
-    var streams = arguments
-
+const mix = function(streams) {
     // Create the output stream of the same length as the inputs
     var outputStream = new Int16Array(streams[0].length)
 
